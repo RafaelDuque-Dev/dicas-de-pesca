@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-  --cor-fundo: linear-gradient(to bottom, #3D8D7A, #B3D8A8);
+  --cor-fundo: linear-gradient(to bottom, #A3D1C6, #ffffff00);
   --cor1:#3D8D7A;
   --cor2:#B3D8A8;
   --cor3:#FBFFE4;
@@ -29,15 +29,17 @@ body::before {
   background-image: url(../img/pexels-quang-nguyen-vinh-222549-2166695.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 0.8; 
+  opacity: 0.7; 
   z-index: -1; 
 }
 
-header {
+.cabecalho {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 30%;
+  margin: auto;
+  padding: 0 30% 0 30%;
+  background-image: var(--cor-fundo);
 }
 
 .cabecalho_links {
