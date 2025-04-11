@@ -1,11 +1,17 @@
 @charset "UTF-8";
-
+@font-face {
+  font-family: Copyduck;
+  src: url(../fonts/Copyduck.otf) format(opentype);
+}
 :root {
-  --cor-fundo: linear-gradient(to bottom, #A3D1C6, #ffffff00);
+  --cor-fundo: linear-gradient(to bottom, #dabb79, #ffffff00);
   --cor1:#3D8D7A;
   --cor2:#B3D8A8;
   --cor3:#FBFFE4;
   --cor4:#A3D1C6;
+  --cor-base:#fbffe496;
+
+  --font-Copyduck: 'Copyduck', sans-serif;
 }
 
 * {
@@ -15,13 +21,13 @@
 
 body {
   position: relative;
-  height: 100vh;
   margin: 0;
+  min-height: 100vh;
 }
 
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -40,6 +46,7 @@ body::before {
   margin: auto;
   padding: 0 30% 0 30%;
   background-image: var(--cor-fundo);
+  padding-bottom: 50px;
 }
 
 .cabecalho_links {
@@ -52,4 +59,21 @@ body::before {
   width: 60px;
   padding: 10px;
   margin-bottom: 5px;
+}
+
+.cabecalho_text {
+  text-decoration: none;
+  font-family: var(--font-Copyduck);
+  font-size: 20px;
+  color: var(--cor3);
+}
+
+
+main {
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--cor-base);
+  padding: 20px;
+  border-radius: 40px;
 }
