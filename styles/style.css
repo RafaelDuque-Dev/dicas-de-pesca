@@ -9,6 +9,7 @@
   --cor2:#B3D8A8;
   --cor3:#FBFFE4;
   --cor4:#A3D1C6;
+  --cor5:#A8987B;
   --cor-base:#fbffe496;
 
   --font-Copyduck: 'Copyduck', sans-serif;
@@ -35,40 +36,40 @@ body::before {
   background-image: url(../img/pexels-quang-nguyen-vinh-222549-2166695.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 0.7; 
+  opacity: 0.5; 
   z-index: -1; 
 }
+
+
 
 .cabecalho {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 0 30% 0 30%;
-  background-image: var(--cor-fundo);
-  padding-bottom: 50px;
+  flex-direction: column;
+}
+
+.cabecalho_links_img {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
 }
 
 .cabecalho_links {
   margin: 10px auto;
   padding: 10px;
   text-align: center;
-}
-
-.cabecalho_links_img {
-  width: 60px;
-  padding: 10px;
-  margin-bottom: 5px;
-}
-
-.cabecalho_text {
   text-decoration: none;
   font-family: var(--font-Copyduck);
-  font-size: 20px;
-  color: var(--cor3);
+  font-size: 1.5em;
+  color: var(--cor1);
 }
 
-
+.cabecalho_links:hover {
+  color: var(--cor5);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
 main {
   justify-content: center;
   max-width: 800px;
